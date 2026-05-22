@@ -1,2 +1,2 @@
-require("yam.core")
-require("yam.lazy")
+require("isai.core")
+require("isai.lazy")

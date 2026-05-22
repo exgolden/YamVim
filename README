@@ -1,0 +1,83 @@
+# YamVim
+
+My personal Neovim configuration based on
+
+## Structure
+
+```
+├── init.lua
+└── lua/isai/
+    ├── core/
+    │   ├── keymaps.lua
+    │   └── options.lua
+    ├── lazy.lua
+    └── plugins/
+        ├── alpha.lua
+        ├── autopairs.lua
+        ├── bufferline.lua
+        ├── colorscheme.lua
+        ├── lint.lua
+        ├── lspconfig.lua
+        ├── lualine.lua
+        ├── mason.lua
+        ├── nvim-tree.lua
+        ├── telescope.lua
+        └── yazi.lua
+```
+
+## Plugins
+
+| Plugin | Purpose |
+|--------|---------|
+| [lazy.nvim](https://github.com/folke/lazy.nvim) | Plugin manager |
+| [Catppuccin](https://github.com/catppuccin/nvim) | Colorscheme (Mocha, transparent) |
+| [nvim-tree](https://github.com/nvim-tree/nvim-tree.lua) | File explorer |
+| [bufferline](https://github.com/akinsho/bufferline.nvim) | Buffer tabs |
+| [lualine](https://github.com/nvim-lualine/lualine.nvim) | Statusline |
+| [telescope](https://github.com/nvim-telescope/telescope.nvim) | Fuzzy finder |
+| [mason](https://github.com/williamboman/mason.nvim) | LSP/linter installer |
+| [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) | LSP configuration |
+| [nvim-lint](https://github.com/mfussenegger/nvim-lint) | Linting |
+| [autopairs](https://github.com/windwp/nvim-autopairs) | Auto bracket/quote pairs |
+| [alpha](https://github.com/goolord/alpha-nvim) | Dashboard |
+| [yazi](https://github.com/mikavilpas/yazi.nvim) | File manager integration |
+
+## Key Mappings
+
+Leader key: `Space`
+
+### General
+| Mapping | Action |
+|---------|--------|
+| `<leader>nh` | Clear search highlights |
+| `<leader>+` | Increment number |
+| `<leader>-` | Decrement number |
+
+### Windows
+| Mapping | Action |
+|---------|--------|
+| `Ctrl+h/l/j/k` | Navigate windows |
+| `Ctrl+Arrow` | Resize windows |
+
+### Buffers
+| Mapping | Action |
+|---------|--------|
+| `Tab` | Next buffer |
+| `Shift+Tab` | Previous buffer |
+| `<leader>x` | Close buffer |
+
+### Other
+| Mapping | Action |
+|---------|--------|
+| `<leader>e` | Toggle file explorer |
+| `<leader>t` | Open terminal |
+
+## Installation
+
+```bash
+git clone https://github.com/exgolden/YamVim.git ~/.config/nvim
+nvim
+```
+
+Lazy.nvim will bootstrap itself and install all plugins on first launch.
+
